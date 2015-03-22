@@ -1,0 +1,14 @@
+/*customization*/
+
+img {
+	float: left;
+	margin: 1em;
+}
+
+h3 {
+	margin-top: 1.5em;
+}
+
+.social a {
+	margin-right: 1em;
+}
