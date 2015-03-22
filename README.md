@@ -1,1 +1,1 @@
-# voteturkiye.com
+# or voteturkiye.org
