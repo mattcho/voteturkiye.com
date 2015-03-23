@@ -18,20 +18,27 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
+    <!-- header -->
     <div class="row">
       <div class="large-12 columns">
         <img src="img/logo.jpg" alt="logo" height="100" width="100">
         <h3>Turkish Policy Center | Türkiye Politika Merkezi – TPC</h3>
       </div>
     </div>
-    <div class="row">
-      <div class="large-8 columns">
-        <ul class="accordion" data-accordion>
-          <li class="accordion-navigation">
-            <a href="#panel1a">An important announcement regarding the upcoming elections in Turkey</a>
-            <div id="panel1a" class="content">
 
-              <p>Dear fellow citizens,</p>
+
+    <div class="row">
+      <div class="large-8 columns panel">
+
+        <ul class="tabs" data-tab>
+          <li class="tab-title active"><a href="#panel1">English</a></li>
+          <li class="tab-title"><a href="#panel2">Turkish</a></li>
+        </ul>
+        <div class="tabs-content">
+          <div class="content active" id="panel1">
+            <h3>An important announcement regarding the upcoming elections in Turkey</h3>
+
+        <p>Dear fellow citizens,</p>
               <p>The upcoming 2015 general elections in Turkey will play an important role in determining our country’s future. This is a historical opportunity to make your voice heard. This election is the most important in many years and it will be incomplete without <strong>YOUR VOTE!</strong></p>
 
 <p>Please vote to have a voice in our country’s future!</p>
@@ -93,15 +100,10 @@ Additionally, the “Supreme Elections Board” (YSK) has a call center which op
                   </tr>
                 </tbody>
               </table>
-            </div>
-          </li>
-
-
-          <li class="accordion-navigation">
-            <a href="#panel2a">2015 Genel Seçimleri Hakkında ABD’de Yaşayan TC Vatandaşlarına Duyuru</a>
-            <div id="panel2a" class="content">
-
-              <p>Değerli Yurttaşlarımız,</p>
+          </div>
+          <div class="content" id="panel2">
+            <h3>2015 Genel Seçimleri Hakkında ABD’de Yaşayan TC Vatandaşlarına Duyuru</h3>
+        <p>Değerli Yurttaşlarımız,</p>
               <p>
 2015 seçimleri ülkemizin kaderini belirlemede son derece önemli olup, sesinizi duyurmanız için de tarihi bir fırsattır.  
 Türkiye’de 7 Haziran 2015 tarihinde gerçekleştirilecek  genel seçimlerde sizleri bağlı bulunduğunuz konsolosluklarda oy vermeye davet ediyoruz! 
@@ -166,12 +168,57 @@ Ayrıca Yüksek Seçim Kurulunun (YSK) 7/24 açık bir çağrı merkezi var. Tel
                   </tr>
                 </tbody>
               </table>
-            </div>
-          </li>
-          <li class="accordion-navigation">
-            <a href="#panel3a">Konsoloslukların Görev Bölgeleri / Consulate Jurisdiction List by State</a>
-            <div id="panel3a" class="content active">
-              <div class="text-center"><img src="img/map.jpg" alt="map"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="large-4 columns">
+
+        <h4>Follow Us</h4>
+
+        <div class="social">
+        <a href="https://www.facebook.com/TurkishPolicyCenter"><i class="fa fa-facebook-square fa-3x"></i></a>
+        <a href="https://twitter.com/Turkish_Policy/"><i class="fa fa-twitter-square fa-3x"></i></a>
+        <a href="https://plus.google.com/u/0/114983576371858434595/posts"><i class="fa fa-google-plus-square fa-3x"></i></a>
+        <a href="https://www.linkedin.com/company/turkish-policy-center/"><i class="fa fa-linkedin-square fa-3x"></i></a>
+        </div>
+
+        <hr />
+
+        <h4>Contact Us</h4>
+
+        <a href="#">Google Voice at 202-768-8518</a> <br />
+        <a href="#">Google Form</a>
+
+        <hr />
+
+        <h4>Take <a href="downloads.zip">these documents!</a></h4>
+
+        <p>"As TPC we are proud to provide these announcements and resources pertaining to the 2015 Turkish general elections. Please feel free to print and distribute these as you see fit. Have your voice heard."</p>
+
+        <p>"TPC olarak 2015 Türkiye genel seçimleri hakkında bu ekteki duyuruları ve kaynakları sağlamaktan gurur duyuyoruz. Lütfen bunları dilediğiniz gibi basın, kullanın, yayın. Sesinizi duyurun."</p>
+
+        <hr />
+
+        <h4>About Us</h4>
+
+        <p>The Turkish Policy Center (TPC) is a volunteer-run, non-partisan 501(3)(c) organization based in Washington, D.C. and established on the 87th anniversary of the Republic of Turkey, 29 October 2010. We strive for a future where Turkey achieves a well-functioning representative liberal democracy, rule of law, secularism, sustainable economic development, a respectable record of human rights and freedoms and international integration. You may find out more about us at <a href="http://www.turkishpolicycenter.org">Turkish Policy Center</a>.</p>
+        
+        <p>Please consider supporting our efforts:</p>
+        <div class="text-center">
+          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TMXV3FNS5DMTY" class="button">Donate!</a>
+        </div>
+
+        <h4>Hakkımızda</h4>
+ 
+<p>Türkiye Politika Merkezi (TPC) Washington, D.C.’de Türkiye Cumhuriyeti’nin 87’inci yıldönümü 29 Ekim 2010’da kuruldu. Gönüllülerden oluşan tarafsız bir sivil toplum örgütü olarak TPC’nin amacı demokratik, laik, liberal, hukukun üstünlüğünün kabul edildiği, sürdürülebilir ekonomisi olan, insan hakları ve özgürlüklerinin saygı duyulduğu, ve uluslarası entegrasyonda başarı elde etmiş bir Türkiye için calışmalar sürdürmek. Hakkımızda daha çok bilgiyi <a href="http://www.turkishpolicycenter.org">TPC’nin websitesinde</a> bulabilirsiniz.</p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="text-center"><img src="img/map.jpg" alt="map"></div>
               <table>
                 <thead>
                   <tr>
@@ -230,30 +277,6 @@ Ayrıca Yüksek Seçim Kurulunun (YSK) 7/24 açık bir çağrı merkezi var. Tel
               </td><td>Connecticut, Massachusetts, Maine, New Hampshire, Rhode Island, Vermont</td></tr>
                 </tbody>
               </table>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="large-4 columns">
-
-        <div class="social">
-        <a href="https://www.facebook.com/TurkishPolicyCenter"><i class="fa fa-facebook-square fa-3x"></i></a>
-        <a href="https://twitter.com/Turkish_Policy/"><i class="fa fa-twitter-square fa-3x"></i></a>
-        <a href="https://plus.google.com/u/0/114983576371858434595/posts"><i class="fa fa-google-plus-square fa-3x"></i></a>
-        <a href="https://www.linkedin.com/company/turkish-policy-center/"><i class="fa fa-linkedin-square fa-3x"></i></a>
-        </div>
-
-        <hr />
-
-        <h3>About Us</h3>
-
-        <p>The Turkish Policy Center (TPC) is a volunteer-run, non-partisan 501(3)(c) organization based in Washington, D.C. and established on the 87th anniversary of the Republic of Turkey, 29 October 2010. We strive for a future where Turkey achieves a well-functioning representative liberal democracy, rule of law, secularism, sustainable economic development, a respectable record of human rights and freedoms and international integration. You may find out more about us at <a href="http://www.turkishpolicycenter.org">Turkish Policy Center</a>.</p>
-        
-        <p>Please consider supporting our efforts:</p>
-        <div class="text-center">
-          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TMXV3FNS5DMTY" class="button">Donate!</a>
-        </div>
       </div>
     </div>
   </div>
