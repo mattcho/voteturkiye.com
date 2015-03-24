@@ -10,28 +10,33 @@
     <meta name="description" content="Turkey election 2015">
     <meta name="author" content="Matt Cho">
     <meta name="copyright" content="Matt Cho, Copyright (c) 2015">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="H4RPaRZ0jmHBLMTmI1a1zt0WDi+ZHGCOPY1l9cv2SimlGVWbp22BDhqluxjy4HLd+5lXoee+UXuhnWph8OnAmQ==" />
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/foundation.min.css" />
-    <link rel="stylesheet" href="css/slick.css" />
-    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.4.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.4.1/slick-theme.min.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
-    <script src="js/vendor/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
   </head>
   <body>
     <!-- header -->
     <div class="row">
       <div class="large-12 columns">
-        <a href="index.html"><img src="img/logo_m.jpg" alt="logo" height="100" width="100"></a>
+        <a href="index.html"><img id="logo" src="img/logo_m.jpg" alt="logo" height="100" width="100"></a>
         <h3>Turkish Policy Center | Türkiye Politika Merkezi – TPC</h3>
       </div>
     </div>
 
     <div class="row">
-      <div class="large-12 hide-for-small">
-        <div id="slick">
+      <div class="large-12">
+        <div class="single-item">
           <img src="img/poster_e.png" alt="slide image">
           <img src="img/poster_t.png" alt="slide image">
         </div>
@@ -43,7 +48,7 @@
 
         <ul class="tabs" data-tab>
           <li class="tab-title active"><a href="#panel1">English</a></li>
-          <li class="tab-title"><a href="#panel2">Turkish</a></li>
+          <li class="tab-title"><a href="#panel2">Türkçe</a></li>
         </ul>
         <div class="tabs-content">
           <div class="content active" id="panel1">
@@ -62,13 +67,13 @@ Turkish citizens in the U.S. are able to vote from May 16th thru May 31st 2015 b
   <li><strong>How does the voting procedure work? Steps to vote:</strong>
     <ol>
       <li><strong>Where am I registered?</strong><p>Every Turkish citizen who is registered in the electoral register abroad can cast their ballot at the Turkish consulate they are registered to. In order to find out if you’re registered in the “electoral register abroad” please <a href="http://www.ysk.gov.tr" target="_blank">visit</a> and enter your Turkish identification number (kimlik numarası).</p></li>
-      <li><strong>What if I’m not registered?</strong><p>If you’re not registered or can’t find your record you can apply or appeal in person to your consulate from March 14 thru March 27th from 8 AM to 5 PM (TR time). <a href="#map">You can find out the jurisdiction areas of each consulate in the attached list.</a> Registration or appeals will not be accepted via post or courier. If you’re already in Turkey you can go to the census directorate (nüfus müdürlüğü) where you can apply to the district election board (ilçe seçim kurulu).</p></li>
+      <li><strong>What if I’m not registered?</strong><p>If you’re not registered or can’t find your record you can apply or appeal in person to your consulate from March 14 thru March 27th from 8 AM to 5 PM (TR time). <a href="downloads/Turkish elections map USA v2.jpg" target="_blank">You can find out the jurisdiction areas of each consulate in the attached list.</a> Registration or appeals will not be accepted via post or courier. If you’re already in Turkey you can go to the census directorate (nüfus müdürlüğü) where you can apply to the district election board (ilçe seçim kurulu).</p></li>
       <li><strong>What type of documents are required to register to vote?</strong><p>In order to register to vote you need the following documents: <br />
           a. Turkish photo ID (passport or identification card) <br />
           b. Proof of residence in the U.S. (driver’s license, phone bill, etc.)<br />
-          c. The address declaration form (adres beyan formu): can be downloaded from <a href="http://www.nvi.gov.tr/Files/AKS/Formlar/FormB onsayfa.pdf" target="_blank">here</a></p>
+          c. The address declaration form (adres beyan formu): can be downloaded from <a href="http://www.nvi.gov.tr/Files/File/AKS/Formlar/FormB_onsayfa.pdf" target="_blank">here</a></p>
       </li>
-      <li>When you receive confirmation of registration please repeat the process in step 1 and check your registration.</li>
+      <li><strong>When you receive confirmation of registration please repeat the process in step 1 and check your registration.</strong></li>
     </ol>
   </li>
 </ul>
@@ -111,7 +116,7 @@ Additionally, the “Supreme Elections Board” (YSK) has a call center which op
                   </tr>
                   <tr>
                     <td>I am registered on the electoral register abroad but during the election dates I am in Turkey. May I vote?</td>
-                    <td>Yes! You may vote at ports of entry and airports that have customs stations. If you are registered on the electoral register abroad you can vote at 33 different ports of entry and airports between May 8, 2015 (starting at 8am) and June 7, 2015 (until 5pm). You may find the list of ports of entry <a href="http://www.ysk.gov.tr/ysk/content/conn/YSKUCM/path/Contribution%20Folders/SecmenIslemleri/Secimler/2015MV-GumrukKapilari.pdf">here</a>.</td>
+                    <td>Yes! You may vote at ports of entry and airports that have customs stations. If you are registered on the electoral register abroad you can vote at 33 different ports of entry and airports between May 8, 2015 (starting at 8am) and June 7, 2015 (until 5pm). You may find the list of ports of entry <a href="http://www.ysk.gov.tr/ysk/content/conn/YSKUCM/path/Contribution%20Folders/SecmenIslemleri/Secimler/2015MV-GumrukKapilari.pdf" target="_blank">here</a>.</td>
                   </tr>
                   <tr>
                     <td>How will my vote cast from abroad be used in Turkey?</td>
@@ -135,16 +140,16 @@ Artık TC vatandaşları yurtdışında oy verebiliyor. ABD’de oy verme işlem
 
   <li><strong>Yurt Dışında Oy Kullanabilmeniz için Adımlar</strong>
     <ol>
-      <li><strong>Seçmen olarak nereye kayıtlıyım?</strong><p>"Yurtdışı Seçmen Kütüğü"ne kayıtlı olan her TC vatandaşı bağlı bulunduğu konsoloslukta oy verebilir. “Yurtdışı Seçmen Kütüğü “ne kayıtlı olup <a href="http://www.ysk.gov.tr" target="_blank">olmadığınızı</a> adresinden TC kimlik numaranızı girerek kontrol ediniz.</p></li>
+      <li><strong>Seçmen olarak nereye kayıtlıyım?</strong><p>"Yurtdışı Seçmen Kütüğü"ne kayıtlı olan her TC vatandaşı bağlı bulunduğu konsoloslukta oy verebilir. “Yurtdışı Seçmen Kütüğü“ne kayıtlı olup olmadığınızı <a href="http://www.ysk.gov.tr" target="_blank">burada</a> TC kimlik numaranızı girerek kontrol ediniz.</p></li>
 
-      <li><strong>Eğer kayıtlı değilsem…</strong><p>Eğer yurtdışı seçmen kütüğünde  kaydınız bulunamazsa veya kayıtlı değilseniz, 14 Mart 2015 (TR saati ile 8.00) ile 27 Mart 2015 (TR saati ile 17.00) arasında bağlı bulunduğunuz konsolosluklara “Şahsen” başvuruda bulunabilirsiniz (<a href="#map">hangi konsolosluğa bağlı bulunduğunuzu ekteki sayfadan öğrenebilirsiniz</a>). Posta veya kurye ile seçmen kayıt işlemi/ itiraz başvuruları kabul edilmeyecektir.
+      <li><strong>Eğer kayıtlı değilsem…</strong><p>Eğer yurtdışı seçmen kütüğünde  kaydınız bulunamazsa veya kayıtlı değilseniz, 14 Mart 2015 (TR saati ile 8.00) ile 27 Mart 2015 (TR saati ile 17.00) arasında bağlı bulunduğunuz konsolosluklara “Şahsen” başvuruda bulunabilirsiniz (<a href="downloads/Turkish elections map USA v2.jpg" target="_blank">hangi konsolosluğa bağlı bulunduğunuzu ekteki sayfadan öğrenebilirsiniz</a>). Posta veya kurye ile seçmen kayıt işlemi/ itiraz başvuruları kabul edilmeyecektir.
 Eğer Türkiye’de iseniz en yakın nüfus müdürlüğüne sonra ilce seçim kuruluna başvurabilirsiniz.</p></li>
       <li><strong>Kayıt için ne getirmem gerekiyor?</strong><p>Bu işlem için konsolosluğa gelirken yanınızda bulundurmanız gereken evraklar şunlar:<br />
         a.  Fotoğraflı TC kimliğiniz veya pasaportunuz <br />
 b.  ABD’de yaşadığınızı kanıtlayan bir belge (ehliyet, fatura, v.b.) <br />
-c.  <a href="http://www.nvi.gov.tr/Files/AKS/Formlar/FormB_onsayfa.pdf" target="_blank">Doldurulmuş adres beyan formu</a>: bu linkte bulabilirsiniz
+c.  <a href="http://www.nvi.gov.tr/Files/File/AKS/Formlar/FormB_onsayfa.pdf" target="_blank">Doldurulmuş adres beyan formu</a>: bu linkte bulabilirsiniz
       </li>
-      <li>Alındı belgesi size ulaştıktan sonra birinci işlemi  tekrarlayarak kaydınızı kontrol ediniz.</li>
+      <li><strong>Alındı belgesi size ulaştıktan sonra birinci işlemi  tekrarlayarak kaydınızı kontrol ediniz.</strong></li>
     </ol>
   </li>
 </ul>
@@ -154,8 +159,8 @@ c.  <a href="http://www.nvi.gov.tr/Files/AKS/Formlar/FormB_onsayfa.pdf" target="
 <table>
                 <thead>
                   <tr>
-                    <th>FAQ</th>
-                    <th>Answers</th>
+                    <th>Sıkça sorulan sorular</th>
+                    <th>Cevaplar</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -188,7 +193,7 @@ Ayrıca Yüksek Seçim Kurulunun (YSK) 7/24 açık bir çağrı merkezi var. Tel
                   
                   <tr>
                     <td>Yurt dışı seçmen kütüğüne kayıtlıyım ama seçim tarihlerinde Türkiye'deyim. Oy verebilir miyim?</td>
-                    <td>Evet! Gümrük kapılarında ve gümrüğü olan havaalanlarında oyunuzu kullanabilirsiniz. Eğer yurt dışı seçmen kütüğüne kayıtlıysanız 33 farklı gümrük kapısında veya havaalanında 8 Mayıs 2015 (08.00'den itibaren) - 7 Haziran 2015 (saat 17.00'ye kadar) arasında oyunuzu kullanabilirsiniz. Listeyi burada <a href="http://www.ysk.gov.tr/ysk/content/conn/YSKUCM/path/Contribution%20Folders/SecmenIslemleri/Secimler/2015MV-GumrukKapilari.pdf">bulabilirsiniz</a>.</td>
+                    <td>Evet! Gümrük kapılarında ve gümrüğü olan havaalanlarında oyunuzu kullanabilirsiniz. Eğer yurt dışı seçmen kütüğüne kayıtlıysanız 33 farklı gümrük kapısında veya havaalanında 8 Mayıs 2015 (08.00'den itibaren) - 7 Haziran 2015 (saat 17.00'ye kadar) arasında oyunuzu kullanabilirsiniz. Listeyi burada <a href="http://www.ysk.gov.tr/ysk/content/conn/YSKUCM/path/Contribution%20Folders/SecmenIslemleri/Secimler/2015MV-GumrukKapilari.pdf" target="_blank">bulabilirsiniz</a>.</td>
                   </tr>
                   <tr>
                     <td>Yurt dışındaki verilecek oylar Türkiye'de nasıl değerlendirilecek?</td>
@@ -217,9 +222,9 @@ Ayrıca Yüksek Seçim Kurulunun (YSK) 7/24 açık bir çağrı merkezi var. Tel
 
         <object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id=6f916e0eeb527ec041e2da4b5d5243fca5689cd0&style=0" /></object>
 
-        <br /><br />
+        <h5>(+1) 202-768-8518</h5>
 
-        <p><a href="#" data-reveal-id="myModal" class="button">Submit a form</a></p>
+        <p><a href="#" data-reveal-id="myModal" class="button">Interested? Submit a form</a></p>
 
         <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
           <iframe src="https://docs.google.com/forms/d/1K7u-hTJECHTx2tuD49HRaZqKBstVDzvF_nFIur4RryA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
@@ -229,13 +234,15 @@ Ayrıca Yüksek Seçim Kurulunun (YSK) 7/24 açık bir çağrı merkezi var. Tel
 
         <h4>Resources / Kaynaklar</h4>
 
-        <p><a href="http://www.nvi.gov.tr/Files/File/AKS/Formlar/FORMB-ARKASAYFA.pdf">Official Address Declaration Form</a></p>
+        <p><a href="downloads/TPC Announcement - TURKISH.pdf" target="_blank">TPC Seçim Bildirisi - TÜRKÇE</a></p>
+        <p><a href="downloads/TPC Announcement - ENGLISH.pdf" target="_blank">TPC Election Announcement - ENGLISH</a></p>
+        <p><a href="downloads/Turkish elections map USA v2.jpg" target="_blank">USA elections map / ABD seçim haritası</a></p>
+        <p><a href="downloads/REPUBLIC OF TURKEY CONSULATES.pdf" target="_blank">Turkish Consulates in the US / ABD'de TC Konsoloslukları</a></p>
+        <p><a href="http://www.nvi.gov.tr/Files/File/AKS/Formlar/FORMB-ARKASAYFA.pdf" target="_blank">Official Address Declaration Form Instructions / Adres Beyan Formu için resmi açıklamalar</a></p>
 
-        <p><a href="downloads.zip">TPC materials</a></p>
+        <p><i>As TPC we are proud to provide these announcements and resources pertaining to the 2015 Turkish general elections. Please feel free to print and distribute these as you see fit. Have your voice heard.</i></p>
 
-        <p>"As TPC we are proud to provide these announcements and resources pertaining to the 2015 Turkish general elections. Please feel free to print and distribute these as you see fit. Have your voice heard."</p>
-
-        <p>"TPC olarak 2015 Türkiye genel seçimleri hakkında bu ekteki duyuruları ve kaynakları sağlamaktan gurur duyuyoruz. Lütfen bunları dilediğiniz gibi basın, kullanın, yayın. Sesinizi duyurun."</p>
+        <p><i>TPC olarak 2015 Türkiye genel seçimleri hakkında bu ekteki duyuruları ve kaynakları sağlamaktan gurur duyuyoruz. Lütfen bunları dilediğiniz gibi basın, kullanın, yayın. Sesinizi duyurun.</i></p>
 
         <hr />
 
@@ -250,7 +257,11 @@ Ayrıca Yüksek Seçim Kurulunun (YSK) 7/24 açık bir çağrı merkezi var. Tel
 
         <h4>Hakkımızda</h4>
  
-<p>Türkiye Politika Merkezi (TPC) Washington, D.C.’de Türkiye Cumhuriyeti’nin 87’inci yıldönümü 29 Ekim 2010’da kuruldu. Gönüllülerden oluşan tarafsız bir sivil toplum örgütü olarak TPC’nin amacı demokratik, laik, liberal, hukukun üstünlüğünün kabul edildiği, sürdürülebilir ekonomisi olan, insan hakları ve özgürlüklerinin saygı duyulduğu, ve uluslarası entegrasyonda başarı elde etmiş bir Türkiye için calışmalar sürdürmek. Hakkımızda daha çok bilgiyi <a href="http://www.turkishpolicycenter.org" target="_blank">TPC’nin websitesinde</a> bulabilirsiniz.</p>
+          <p>Türkiye Politika Merkezi (TPC) Washington, D.C.’de Türkiye Cumhuriyeti’nin 87’inci yıldönümü 29 Ekim 2010’da kuruldu. Gönüllülerden oluşan tarafsız bir sivil toplum örgütü olarak TPC’nin amacı demokratik, laik, liberal, hukukun üstünlüğünün kabul edildiği, sürdürülebilir ekonomisi olan, insan hakları ve özgürlüklerinin saygı duyulduğu, ve uluslarası entegrasyonda başarı elde etmiş bir Türkiye için calışmalar sürdürmek. Hakkımızda daha çok bilgiyi <a href="http://www.turkishpolicycenter.org" target="_blank">TPC’nin websitesinde</a> bulabilirsiniz.</p>
+
+          <div class="text-center">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TMXV3FNS5DMTY" target="_blank" class="button">Bizi destekleyin!</a>
+          </div>
 
       </div>
     </div>
@@ -319,21 +330,18 @@ Ayrıca Yüksek Seçim Kurulunun (YSK) 7/24 açık bir çağrı merkezi var. Tel
       </div>
     </div>
   </div>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/fastclick.js"></script>
-
-    <script src="js/foundation.min.js"></script>
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
     <script>
       $(document).foundation();
     </script>
     <script>
     $(document).ready(function(){
-      $('#slick').slick({
+      $('.single-item').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000
+        autoplaySpeed: 5000,
+        dots: true,
+        fade: true,
       });
     });
     </script>
